@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Network } from "lucide-react";
 import { SiLinkedin, SiX, SiGithub } from "react-icons/si";
-import logoPath from "@assets/image_1756048635743.png";
+import logoPath from "@assets/generated_images/Modern_tech_company_logo_5eea7bc7.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {

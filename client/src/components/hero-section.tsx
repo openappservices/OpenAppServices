@@ -23,12 +23,12 @@ export default function HeroSection() {
         <div className="absolute inset-0 hero-gradient opacity-60"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
+          className="text-5xl md:text-7xl font-bold mb-8 leading-tight mt-8"
           data-testid="hero-headline"
         >
           <span className="text-white">AI Automation</span>
