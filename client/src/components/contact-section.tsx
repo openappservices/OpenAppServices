@@ -61,19 +61,19 @@ export default function ContactSection() {
     {
       icon: Mail,
       title: "Email",
-      value: "hello@openappservices.com",
+      value: "info@openappservices.com",
       color: "bg-primary-green",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+91 8186053288",
       color: "bg-accent-cyan",
     },
     {
       icon: Clock,
       title: "Response Time",
-      value: "Within 24 hours",
+      value: "Within 8 hours",
       color: "bg-accent-lime",
     },
   ];
