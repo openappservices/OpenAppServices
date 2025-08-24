@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, Network } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoPath from "@assets/generated_images/Modern_tech_company_logo_5eea7bc7.png";
+import logoPath from "@assets/generated_images/New_tech_startup_logo_b609774c.png";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);

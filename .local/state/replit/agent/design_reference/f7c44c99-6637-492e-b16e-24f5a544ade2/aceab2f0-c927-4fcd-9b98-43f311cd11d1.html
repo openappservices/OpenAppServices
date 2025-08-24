@@ -1,0 +1,515 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open App Services - AI Automation for Smarter Business</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-green': '#10B981',
+                        'dark-green': '#065F46',
+                        'accent-cyan': '#06B6D4',
+                        'accent-lime': '#84CC16',
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #111827 0%, #1F2937 100%);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #065F46 0%, #10B981 50%, #06B6D4 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+        }
+        .btn-glow {
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+        }
+        .btn-glow:hover {
+            box-shadow: 0 0 30px rgba(16, 185, 129, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    
+    <!-- @COMPONENT: Navigation -->
+    <nav class="fixed w-full z-50 bg-gray-900/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <!-- Company logo integration -->
+                    <div class="w-10 h-10 bg-primary-green rounded-lg flex items-center justify-center">
+                        <i class="fas fa-network-wired text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl font-semibold text-white">Open App Services</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-300 hover:text-primary-green transition-colors">Services</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-primary-green transition-colors">Benefits</a>
+                    <a href="#about" class="text-gray-300 hover:text-primary-green transition-colors">About</a>
+                    <a href="#contact" class="text-gray-300 hover:text-primary-green transition-colors">Contact</a>
+                    <button class="bg-primary-green hover:bg-emerald-600 px-6 py-2 rounded-lg font-medium transition-all btn-glow">
+                        Free Consultation
+                    </button>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-300 hover:text-white">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background with modern tech imagery -->
+        <!-- A futuristic digital network visualization with glowing nodes and connections in green/blue tones -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080" alt="Digital network visualization" class="w-full h-full object-cover opacity-20" />
+            <div class="absolute inset-0 hero-gradient opacity-80"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                <span class="text-white">AI Automation</span><br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-green to-accent-cyan">
+                    for a Smarter, Sustainable Business
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+                Transform your operations with intelligent automation that reduces costs, eliminates repetitive tasks, and drives sustainable growth.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <button class="bg-primary-green hover:bg-emerald-600 px-8 py-4 rounded-xl text-lg font-semibold transition-all btn-glow transform hover:scale-105">
+                    <i class="fas fa-calendar-alt mr-2"></i>
+                    Get Free Consultation
+                </button>
+                <button class="border-2 border-gray-600 hover:border-primary-green px-8 py-4 rounded-xl text-lg font-medium transition-all hover:bg-primary-green/10">
+                    <i class="fas fa-play mr-2"></i>
+                    Watch Demo
+                </button>
+            </div>
+            
+            <!-- Stats Section -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary-green mb-2">85%</div>
+                    <div class="text-gray-400">Task Automation Rate</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-accent-cyan mb-2">40%</div>
+                    <div class="text-gray-400">Cost Reduction</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-accent-lime mb-2">60%</div>
+                    <div class="text-gray-400">Energy Savings</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: Services Section -->
+    <section id="services" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-green to-accent-cyan">
+                        Transform Your Operations
+                    </span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Open App Services helps companies reduce manual, repetitive tasks and energy consumption through intelligent AI integration and automation solutions.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-gray-900 rounded-2xl p-8 border border-gray-700 card-hover">
+                    <!-- AI automation workflow visualization -->
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary-green to-emerald-400 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Process Automation</h3>
+                    <p class="text-gray-400 mb-6">
+                        Eliminate repetitive manual tasks with intelligent workflows that adapt and learn from your business patterns.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center"><i class="fas fa-check text-primary-green mr-2"></i> Workflow Design</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary-green mr-2"></i> Task Automation</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary-green mr-2"></i> Integration Setup</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-gray-900 rounded-2xl p-8 border border-gray-700 card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-accent-cyan to-blue-400 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-leaf text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Energy Optimization</h3>
+                    <p class="text-gray-400 mb-6">
+                        Reduce energy consumption and carbon footprint through smart resource management and predictive analytics.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center"><i class="fas fa-check text-primary-green mr-2"></i> Smart Monitoring</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary-green mr-2"></i> Predictive Analysis</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary-green mr-2"></i> ESG Reporting</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-gray-900 rounded-2xl p-8 border border-gray-700 card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-accent-lime to-green-400 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-white">AI Integration</h3>
+                    <p class="text-gray-400 mb-6">
+                        Seamlessly integrate cutting-edge AI solutions into your existing infrastructure for maximum efficiency.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center"><i class="fas fa-check text-primary-green mr-2"></i> Custom AI Models</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary-green mr-2"></i> System Integration</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary-green mr-2"></i> Performance Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Services Section -->
+
+    <!-- @COMPONENT: Benefits Section -->
+    <section id="benefits" class="py-20 gradient-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">
+                    Core Benefits
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Achieve measurable results with our proven AI automation solutions designed for modern businesses.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Benefits List -->
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-primary-green rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-dollar-sign text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Cost Savings</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Reduce operational costs by up to 40% through intelligent automation that eliminates redundancies and optimizes resource allocation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-accent-lime rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-seedling text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Enhanced Sustainability</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Meet your ESG goals with smart energy management and sustainable practices that reduce environmental impact by up to 60%.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-accent-cyan rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-chart-line text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Scalable Growth</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Future-proof your business with AI solutions that scale with your growth and adapt to changing market demands.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Risk Reduction</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Minimize human error and operational risks with automated quality control and predictive maintenance systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefits Visualization -->
+                <div class="relative">
+                    <!-- Modern sustainable business environment with green technology elements -->
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Sustainable business technology" class="rounded-2xl shadow-2xl w-full" />
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary-green/20 to-accent-cyan/20 rounded-2xl"></div>
+                    
+                    <!-- Floating Stats -->
+                    <div class="absolute -top-4 -right-4 bg-gray-900 rounded-xl p-4 border border-gray-700">
+                        <div class="text-2xl font-bold text-primary-green">40%</div>
+                        <div class="text-sm text-gray-400">Cost Reduction</div>
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 bg-gray-900 rounded-xl p-4 border border-gray-700">
+                        <div class="text-2xl font-bold text-accent-lime">60%</div>
+                        <div class="text-sm text-gray-400">Energy Savings</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Benefits Section -->
+
+    <!-- @COMPONENT: About Us Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-green to-accent-cyan">
+                            About Open App Services
+                        </span>
+                    </h2>
+                    <p class="text-xl text-gray-400 leading-relaxed mb-8">
+                        We are a forward-thinking technology company dedicated to helping organizations leverage AI automation for sustainable growth. Our mission is to bridge the gap between cutting-edge artificial intelligence and practical business applications, creating solutions that drive both profitability and environmental responsibility.
+                    </p>
+                    <p class="text-lg text-gray-400 leading-relaxed mb-8">
+                        Founded by a team of AI experts and sustainability advocates, we believe that the future of business lies in intelligent automation that not only reduces costs but also contributes to a more sustainable world. Our solutions are designed to evolve with your business, ensuring long-term success and positive environmental impact.
+                    </p>
+                    
+                    <!-- Company Values -->
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary-green rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-lightbulb text-white text-2xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-white mb-2">Innovation</h4>
+                            <p class="text-gray-400 text-sm">Cutting-edge AI solutions</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-accent-lime rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-globe text-white text-2xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-white mb-2">Sustainability</h4>
+                            <p class="text-gray-400 text-sm">Environmental responsibility</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <!-- Professional startup team collaborating on AI technology -->
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Professional team collaboration" class="rounded-2xl shadow-2xl w-full" />
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary-green/10 to-accent-cyan/10 rounded-2xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About Us Section -->
+
+    <!-- @COMPONENT: Contact Section -->
+    <section id="contact" class="py-20 gradient-bg">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">
+                    Get Started Today
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Ready to transform your business with AI automation? Contact us for a free consultation and discover how we can help you achieve your goals.
+                </p>
+            </div>
+
+            <div class="bg-gray-900 rounded-3xl p-8 md:p-12 border border-gray-700">
+                <form class="space-y-6" data-implementation="Form submission should validate inputs and send inquiry">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="firstName" class="block text-sm font-medium text-gray-300 mb-2">First Name</label>
+                            <input type="text" id="firstName" name="firstName" class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-green focus:border-transparent" placeholder="John" required>
+                        </div>
+                        <div>
+                            <label for="lastName" class="block text-sm font-medium text-gray-300 mb-2">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-green focus:border-transparent" placeholder="Doe" required>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-green focus:border-transparent" placeholder="john@company.com" required>
+                    </div>
+                    
+                    <div>
+                        <label for="company" class="block text-sm font-medium text-gray-300 mb-2">Company</label>
+                        <input type="text" id="company" name="company" class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-green focus:border-transparent" placeholder="Your Company">
+                    </div>
+                    
+                    <div>
+                        <label for="projectType" class="block text-sm font-medium text-gray-300 mb-2">Project Type</label>
+                        <select id="projectType" name="projectType" class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-primary-green focus:border-transparent">
+                            <option value="">Select a service</option>
+                            <option value="process-automation">Process Automation</option>
+                            <option value="energy-optimization">Energy Optimization</option>
+                            <option value="ai-integration">AI Integration</option>
+                            <option value="consultation">General Consultation</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-green focus:border-transparent resize-none" placeholder="Tell us about your project and how we can help..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-primary-green hover:bg-emerald-600 px-8 py-4 rounded-xl text-lg font-semibold transition-all btn-glow transform hover:scale-[1.02]">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Send Inquiry
+                    </button>
+                </form>
+                
+                <!-- Contact Info -->
+                <div class="mt-12 pt-8 border-t border-gray-700">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <div class="w-12 h-12 bg-primary-green rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <h4 class="font-semibold text-white mb-2">Email</h4>
+                            <p class="text-gray-400">hello@openappservices.com</p>
+                        </div>
+                        <div>
+                            <div class="w-12 h-12 bg-accent-cyan rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <h4 class="font-semibold text-white mb-2">Phone</h4>
+                            <p class="text-gray-400">+1 (555) 123-4567</p>
+                        </div>
+                        <div>
+                            <div class="w-12 h-12 bg-accent-lime rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-clock text-white"></i>
+                            </div>
+                            <h4 class="font-semibold text-white mb-2">Response Time</h4>
+                            <p class="text-gray-400">Within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact Section -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-gray-900 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-primary-green rounded-lg flex items-center justify-center">
+                            <i class="fas fa-network-wired text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-semibold text-white">Open App Services</span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Transforming businesses through intelligent AI automation solutions that drive sustainability and growth.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-primary-green rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-primary-green rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-primary-green rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-github text-white"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-primary-green transition-colors">Process Automation</a></li>
+                        <li><a href="#" class="hover:text-primary-green transition-colors">Energy Optimization</a></li>
+                        <li><a href="#" class="hover:text-primary-green transition-colors">AI Integration</a></li>
+                        <li><a href="#" class="hover:text-primary-green transition-colors">Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-primary-green transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-primary-green transition-colors">Case Studies</a></li>
+                        <li><a href="#" class="hover:text-primary-green transition-colors">Blog</a></li>
+                        <li><a href="#contact" class="hover:text-primary-green transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2024 Open App Services. All rights reserved. | 
+                    <a href="#" class="text-primary-green hover:text-emerald-400 transition-colors">Privacy Policy</a> | 
+                    <a href="#" class="text-primary-green hover:text-emerald-400 transition-colors">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // Smooth scrolling for navigation links
+        (function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Form submission handler placeholder
+            document.querySelector('form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                // TODO: Implement form submission logic with validation
+                alert('Thank you for your inquiry! We will get back to you within 24 hours.');
+            });
+
+            // Navbar background on scroll
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('nav');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('bg-gray-900/95');
+                } else {
+                    navbar.classList.remove('bg-gray-900/95');
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
